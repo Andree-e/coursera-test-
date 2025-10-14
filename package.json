@@ -1,0 +1,24 @@
+{
+  "name": "coursera",
+  "version": "1.0.0",
+  "description": "coursera test repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andree-e/coursera-test-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Andree-e/coursera-test-/issues"
+  },
+  "homepage": "https://github.com/Andree-e/coursera-test-#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px;
+}
+
+.section {
+  float: left;
+  width: 31.33%;
+  border: 1px solid Yellow;
+  background-color: #005652;
+  padding: 40px 20px 20px;
+  position: relative;
+  font-weight: bold;
+  
+}
+/* Desktop spacing (≥992px) */
+@media (min-width: 992px) {
+  .section {
+    width: 31.33%;        /* stays roughly one-third each */
+    margin-right: 2%;     /* gap between boxes */
+    float: left;
+  }
+
+  /* Remove right margin from the last box (Sushi) */
+  .section:last-child {
+    margin-right: 0;
+  }
+
+  /* Optional: add left/right margin around the entire page */
+  body {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #005652;
+  border: 1px solid Yellow;
+  width: 100px;     
+  height: 30px;     
+  text-align: center;
+  line-height: 30px;  
+  font-weight: bold;
+  box-sizing: border-box;
+}
+#chicken .section-title {
+  background-color: #f4a261; /* orange */
+}
+
+#beef .section-title {
+  background-color: #e76f51; /* red */
+}
+
+#sushi .section-title {
+  background-color: #2a9d8f; /* teal */
+}
+
+
+/* Tablet view (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .section {
+    float: left;
+    width: 48%;            /* slightly smaller to make room for side padding */
+    margin-right: 4%;
+    margin-bottom: 4%;
+  }
+
+  .section:nth-of-type(2) {
+    margin-right: 0;       /* remove gap after Beef */
+  }
+
+  .section:nth-of-type(3) {
+    width: 100%;
+    clear: both;
+  }
+}
+
+
+
+
+/* Mobile view (≤767px) */
+@media (max-width: 767px) {
+  .container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .section {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-bottom: 20px;
+  }
+
+  .section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
